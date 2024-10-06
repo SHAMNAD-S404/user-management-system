@@ -44,7 +44,7 @@ admin_route.get  ('/new-user',auth.isLogin,adminController.newUserLoad)
            .post ('/new-user',auth.isLogin,adminController.addUser)
 
 
-admin_route.get ('*',(req,res) => {  //redirecting
+admin_route.get ('*',(req,res) => {  // redirecting to home
     res.redirect('/admin');
 });
 
